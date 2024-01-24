@@ -15,7 +15,7 @@ body {
 }
 header {
   position: fixed;
-
+  z-index: 99;
   white-space: nowrap;
   width: 100%;
   height: 170px;
@@ -27,7 +27,7 @@ header {
   background-color: rgb(70, 70, 202);
   padding-bottom: 20px;
 }
-.nav-mid {
+.nav-mid-container {
   padding-top: 20px;
   display: flex;
   align-items: center;
@@ -186,7 +186,125 @@ a:visited {
   color: whitesmoke;
 }
 main {
+  padding-top: 170px;
   width: 100vw;
   height: 3000px;
   background-color: rgb(255, 255, 255);
+  justify-content: center;
+  display: flex;
+}
+.navbar {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 0;
+  height: auto;
+  position: absolute;
+}
+.carousel-container > div > img {
+  width: 100%;
+  border-radius: 10px;
+}
+.slides {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90%;
+  z-index: 1;
+  justify-content: center;
+}
+.slides-btn {
+  width: 14px;
+  height: 14px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+.slides-btn:hover {
+  cursor: pointer;
+  background-color: rgb(139, 139, 139);
+}
+
+.carousel-container > .left-btn {
+  position: absolute;
+  background-position: center;
+  left: 10px;
+  top: 45%;
+  transform: rotate(270deg);
+  background-image: url("./../../images/landing-page/button-arrow.svg");
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.carousel-container > .right-btn {
+  position: absolute;
+  background-position: center;
+  top: 45%;
+  right: 10px;
+  transform: rotate(90deg);
+  background-image: url("./../../images/landing-page/button-arrow.svg");
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.carousel-container > .left-btn:hover,
+.right-btn:hover {
+  background-color: rgb(139, 139, 139);
+  cursor: pointer;
+}
+/* responsive design */
+
+@media (max-width: 500px) {
+  .nav-top,
+  .nav-bottom,
+  .nav-mid {
+    display: none;
+  }
+  header {
+    width: 100vw;
+    min-width: 200px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+  .nav-mid-container {
+    padding: 0;
+  }
+  .logo-pedagang {
+    margin-top: 0;
+    margin-left: 20px;
+    vertical-align: middle;
+    height: 4vh;
+  }
+  .navbar {
+    border: 2px solid white;
+    height: 4vh;
+    width: 4vh;
+    position: absolute;
+    top: 3vh;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.1s;
+  }
+  .navbar > img {
+    height: 3vh;
+  }
+  .navbar:hover {
+    background-color: rgb(142, 142, 230);
+  }
+  main {
+    padding-top: 10vh;
+  }
 }
