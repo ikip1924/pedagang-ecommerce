@@ -167,9 +167,8 @@ input[type="search"] {
 }
 .nav-rekomendasi {
   display: inline-block;
-  padding-left: 250px;
-  margin-left: 20%;
-  transform: translateX(-30%);
+
+  margin-left: 250px;
 }
 .rekomendasi-btn {
   width: 15%;
