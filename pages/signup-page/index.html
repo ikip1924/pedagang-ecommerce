@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedagang</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/signup-page/style.css"
+      class="style"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <header>
+        <div class="img">
+          <img
+            src="../../assets/images/signup-page/logo.svg"
+            alt=""
+            class="logo"
+          />
+        </div>
+      </header>
+      <div class="container">
+        <div class="container__login">
+          <form action="login">
+            <div class="name">
+              <label for="full_name">Full Name</label>
+              <input type="text" placeholder="Enter Your Full Name" required />
+            </div>
+            <div class="age">
+              <label for="last_name">Your Age</label>
+              <input
+                type="number"
+                placeholder="Input Your Age"
+                min="15"
+                max="99"
+                required
+              />
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                placeholder="Enter your active email"
+                required
+              />
+            </div>
+            <div class="phone_number">
+              <label for="last_name">Phone Number</label>
+              <input type="text" placeholder="your phone number" required />
+            </div>
+            <div class="password">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                placeholder="Enter Your Password"
+                required
+              />
+            </div>
+
+            <div class="btn__login">
+              <a href="#" class="btn__login"
+                ><button class="btn__login">Signup</button></a
+              >
+            </div>
+          </form>
+
+          <div class="btn__glogin">
+            <a href="#" class="btn__login-glogin"
+              ><button class="btn__login-gloginbtn">
+                <img
+                  src="../../assets/images/signup-page/Google-logo.png"
+                  alt=""
+                  class="G_logo"
+                />Or Signup with Google
+              </button></a
+            >
+          </div>
+          <div class="signin__link">
+            <p class="sign__in">
+              Already Have accout?<a
+                href="../login-page/index.html"
+                class="sign__in"
+              >
+                Signin</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
