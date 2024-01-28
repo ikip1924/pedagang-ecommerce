@@ -179,11 +179,10 @@ input[type="search"] {
   color: rgb(247, 250, 151);
   background-color: #ffffff3c;
 }
-a:link {
-  text-decoration: none;
-}
-a:visited {
+
+a:any-link {
   color: whitesmoke;
+  text-decoration: none;
 }
 main {
   width: 100%;
