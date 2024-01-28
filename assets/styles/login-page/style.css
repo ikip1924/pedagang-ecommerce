@@ -94,6 +94,9 @@ a > .btn__login {
   color: #efefef;
   font-size: 15px;
 }
+a > .btn__login:hover {
+  cursor: pointer;
+}
 
 a > .btn__login:hover {
   color: #3d49e9;

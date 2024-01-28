@@ -1,6 +1,5 @@
 * {
   border: 0;
-
   padding: 0;
   font-family: sans-serif;
   font-weight: 500;
@@ -317,6 +316,7 @@ main {
 .feature-logo > p {
   vertical-align: middle;
 }
+
 /* responsive design */
 
 @media (max-width: 500px) {
