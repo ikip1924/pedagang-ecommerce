@@ -675,7 +675,7 @@ main {
     display: grid;
     height: 100%;
     grid-template-columns: repeat(2, 47%);
-    grid-template-rows: repeat(2, 77.5%);
+    grid-template-rows: repeat(2, 89.5%);
     white-space: nowrap;
     justify-content: center;
     gap: 5px;
@@ -705,6 +705,7 @@ main {
 }
 
 .container__footer {
+  margin-top: 400px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
